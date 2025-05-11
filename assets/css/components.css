@@ -1,0 +1,121 @@
+@layer components {
+    .container {
+        width: 78rem;
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        span& {
+            display: block;
+        }
+
+        &--sm {
+            width: 42rem;
+        }
+
+        &--md {
+            width: 54rem;
+        }
+    }
+
+    .section {
+        --section-padding: 2.5rem;
+        padding-top: var(--section-padding);
+        padding-bottom: var(--section-padding);
+
+        @screen md {
+            --section-padding: 4rem;
+        }
+
+        @screen lg {
+            --section-padding: 6rem;
+        }
+    }
+
+    .content {
+        --content-gap: 0.75em;
+
+        * + *:where(:not(br)) {
+            margin-top: var(--content-gap);
+        }
+
+        a:where(:not(.wr-button)) {
+            @apply text-blue-500 hover:text-blue-700;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            @apply text-dark;
+            line-height: 1.15;
+            text-wrap: balance;
+
+            a,
+            a:hover {
+                color: inherit;
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        h5 {
+            font-size: 1rem;
+        }
+
+        h6 {
+            font-size: 1rem;
+        }
+
+        @screen md {
+            --content-gap: 1em;
+
+            h1 {
+                font-size: 4.5rem;
+            }
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            h3 {
+                font-size: 2.5rem;
+            }
+
+            h4 {
+                font-size: 2rem;
+            }
+
+            h5 {
+                font-size: 1.5rem;
+            }
+
+            h6 {
+                font-size: 1rem;
+            }
+        }
+
+        @screen lg {
+            --content-gap: 1.5em;
+        }
+    }
+}

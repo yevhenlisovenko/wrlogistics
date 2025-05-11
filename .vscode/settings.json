@@ -1,0 +1,27 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "files.associations": {
+        "*.css": "postcss",
+        "*.vue": "vue"
+    },
+    "emmet.includeLanguages": {
+        "vue": "html",
+        "postcss": "css"
+    },
+    "vetur.validation.template": false,
+    "vetur.validation.style": false,
+    "css.validate": false,
+    "tailwindCSS.emmetCompletions": true,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "tailwindCSS.includeLanguages": {
+        "vue": "html",
+        "vue-html": "html",
+        "javascript": "javascript",
+        "postcss": "css"
+    }
+}

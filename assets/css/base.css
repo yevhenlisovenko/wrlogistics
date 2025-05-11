@@ -1,0 +1,31 @@
+@layer base {
+    @font-face {
+        font-family: 'Inter';
+        font-weight: 400;
+        src: url('~/assets/fonts/inter-regular.woff2') format('woff2'), url('~/assets/fonts/inter-regular.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        font-weight: 500;
+        src: url('~/assets/fonts/inter-semibold.woff2') format('woff2'), url('~/assets/fonts/inter-semibold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        font-weight: 700;
+        src: url('~/assets/fonts/inter-bold.woff2') format('woff2'), url('~/assets/fonts/inter-bold.woff') format('woff');
+    }
+
+    html,
+    body {
+        @apply bg-blue-100 text-gray-500;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        letter-spacing: -1%;
+        overscroll-behavior: none;
+    }
+
+    body.js-scroll-disabled {
+        max-width: 100vw;
+    }
+}

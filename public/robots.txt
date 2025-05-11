@@ -1,0 +1,11 @@
+Host: https://wr.group
+
+# Allow all search engines and AI crawlers
+User-agent: *
+
+# Allow full access to public pages
+Allow: /
+
+# Allow LLM-accessible files
+Allow: /llms.txt
+Allow: /llms-full.txt

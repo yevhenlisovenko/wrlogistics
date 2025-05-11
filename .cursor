@@ -1,0 +1,45 @@
+{
+  "project": {
+    "name": "wrlogistics_website",
+    "framework": "nuxt3",
+    "language": "javascript",
+    "typescript": false,
+    "root": "."
+  },
+  "index": {
+    "include": [
+      "components/**/*",
+      "pages/**/*",
+      "layouts/**/*",
+      "composables/**/*",
+      "plugins/**/*",
+      "middleware/**/*",
+      "assets/**/*",
+      "content/**/*",
+      "i18n/locales/**/*",
+      "nuxt.config.js",
+      "tailwind.config.js"
+    ],
+    "exclude": [
+      "node_modules/**/*",
+      ".output/**/*",
+      ".nuxt/**/*",
+      "dist/**/*",
+      ".git/**/*",
+      ".vercel/**/*",
+      ".netlify/**/*"
+    ]
+  },
+  "eslint": {
+    "enabled": true,
+    "configFile": ".eslintrc"
+  },
+  "tailwindcss": {
+    "enabled": true,
+    "configFile": "tailwind.config.js"
+  },
+  "i18n": {
+    "enabled": true,
+    "localesDir": "i18n/locales"
+  }
+}
